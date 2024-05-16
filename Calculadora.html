@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="Calculadora.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="fundo">
-        <h1>Fellipe Gutierrez</h1>
+        
         <div class="calculadora">
-            <h2>Calculadora</h2>
+            <h2 id="nome-cal">Calculadora</h2>
             <p id="resultado"></p>
             <table>
                 <tr>
-                    <td><button class="botao"onclick="clean()">C</button></td>
-                    <td><button class="botao" onclick="back()"><</button></td>
+                    <td><button class="botao" onclick="clean()">C</button></td>
+                    <td><button class="botao" onclick="back()"><</button>
+                    </td>
                     <td><button class="botao" onclick="insert('/')">/</button></td>
                     <td><button class="botao" onclick="insert('*')">X</button></td>
                 </tr>
@@ -38,30 +44,33 @@
                     <td rowspan="2"><button class="botao" style="height: 107px;" onclick="calcular()">=</button></td>
                 </tr>
                 <tr>
-                    <td colspan="2" ><button class="botao" colspan="2" style="width: 107px;" onclick="insert('0')">0</button></td>
+                    <td colspan="2"><button class="botao" colspan="2" style="width: 107px;"
+                            onclick="insert('0')">0</button></td>
                     <td><button class="botao" onclick="insert('.')">.</button></td>
                 </tr>
             </table>
+            <h1 id="nome">Fellipe Gutierrez</h1>
         </div>
     </div>
     <script>
-        function insert(num){
-           var numero = document.getElementById('resultado').innerHTML;
+        function insert(num) {
+            var numero = document.getElementById('resultado').innerHTML;
             document.getElementById('resultado').innerHTML = numero + num;
         }
-        function clean(){
+        function clean() {
             document.getElementById('resultado').innerHTML = "";
         }
-        function back(){
+        function back() {
             var volte = document.getElementById('resultado').innerHTML;
-            document.getElementById('resultado').innerHTML = volte.substring(0,volte.length-1);
+            document.getElementById('resultado').innerHTML = volte.substring(0, volte.length - 1);
         }
-        function calcular(){
+        function calcular() {
             var resultado = document.getElementById('resultado').innerHTML;
-            if(resultado){
+            if (resultado) {
                 document.getElementById('resultado').innerHTML = eval(resultado);
             }
         }
     </script>
 </body>
+
 </html>

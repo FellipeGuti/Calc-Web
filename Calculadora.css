@@ -2,22 +2,48 @@
     margin: 0;
     padding: 0;
 }
+
+@media (max-width: 450px){
+    .calculadora{
+        top: 45%;
+    }
+}
+
+@media (min-width: 451px){
+    .calculadora{
+        top: 50%;
+    }
+}
+
 .fundo{
-    background-image: linear-gradient(45deg,black, green
+    background-image: linear-gradient(45deg,rgba(0, 0, 0, 0.749), rgba(0, 128, 0, 0.301)
     );
     height: 100vh;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+
+#nome{
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0);
+    font-family: Dancing Script;
+}
+
+#nome-cal{
+    border-bottom: 1px solid gray ;
+}
+
 .calculadora{
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
-    top: 50%;
+    background-color: rgba(0, 0, 0, 0.71);
+    /* top: 50%; */
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 15px;
     padding: 15px;
+    border: 2px solid rgb(218, 215, 215);
 }
 .botao{
     width: 50px;
