@@ -1,4 +1,4 @@
-# Calculadora-Web
+# Calculadora-Web 🖩
 
  __Calculadora-Web__,  Uma aplicação Front-End simples, com intuito de exercitar meus conhecimentos e adquirir expreriência no desenvolvimento do projeto.
  
