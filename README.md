@@ -19,3 +19,6 @@
 * Com o __CSS__ observamos o layout do Projeto juntamente com detalhes nos botões: Hover e com a responsividade do site é possivel acessar a aplicação de qualquer dispositivo convencional sem que haja desconfiguração do layout; e
 
 * Com __JavaScript__ fiz toda parte funcional da Calculadora , desde clicar em botões para fazer operaçõs como clicar e limpar todos os dados ou apenas um item da operação matenática.
+
+
+- __Link do Site:__ https://calculadorabasicaweb.netlify.app/
